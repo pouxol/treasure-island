@@ -25,21 +25,23 @@ print("Your mission is to find the treasure.")
 
 #https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
-lr = input("left or right? ")
+lr = input("Do you want to go left or right? ")
 if lr == "left":
-  sw = input("swim or wait? ")
+  print("You reach a little cave with a sea in it.")
+  sw = input("Do you want to swim or wait? ")
   if sw == "wait":
-    wd = input("Which door? Red, Blue or Yellow?")
+    print("As you wait the moonlight shows you the right way. And you find three doors in a hidden corner of the cave.")
+    wd = input("Which door do you want to open? Red, Blue or Yellow?")
     if wd == "Red":
-      print("Burned by fire. Game Over.")
+      print("Fire comes out of the door and burnes you. Game Over.")
     elif wd == "Blue":
-      print("Eaten by beasts. Game Over.")
+      print("A beast jumps out of the door and bites your head off. Game Over.")
     elif wd == "Yellow":
-      print("You Win!")
+      print("You find the golden room with the hidden legendary treasure. You Win!")
     else:
       print("Game Over.")
   else:
-    print("Attacked by trout. Game Over.")
+    print("The water is filled with ghosts of the past that drag you deep into the water until you die. Game Over.")
 
 else:
-  print("Fall into a hole. Game Over.")
+  print("You did not go the right way. As you turn around you fall into a hole. Game Over.")
